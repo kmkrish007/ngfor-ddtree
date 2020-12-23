@@ -1,0 +1,14 @@
+<div class="content-wrapper">
+  <div *ngFor="let d of DDTreeFields" class="row">
+    <div style="width: 250px;margin: 0 auto;">
+      <h4>{{d.id}}</h4>
+      <ejs-dropdowntree
+        [id]="d.id"
+        [fields]="d.data"
+        popupHeight="200px"
+        placeholder="Select an item"
+      >
+      </ejs-dropdowntree>
+    </div>
+  </div>
+</div>
